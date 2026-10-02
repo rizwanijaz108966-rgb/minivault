@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0e1320">
+  <title>MiniVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <div class="logo">
+      <span class="logo-mark">M</span>
+      <span class="logo-text">Mini<b>Vault</b></span>
+    </div>
+  </header>
+
+  <!-- All screens are drawn into this element by app.js -->
+  <main id="app"></main>
+
+  <nav class="bottom" id="nav">
+    <button data-view="home" class="on">
+      <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>Home
+    </button>
+    <button data-view="games">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10v5M4.5 12.5h5"/><circle cx="16" cy="11.5" r="1"/><circle cx="18.5" cy="14" r="1"/></svg>Games
+    </button>
+    <button data-view="apps">
+      <svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg>Apps
+    </button>
+    <button data-view="search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg>Search
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
