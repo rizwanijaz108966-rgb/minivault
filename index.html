@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#0e1320">
   <title>MiniVault</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="auth.css">
 </head>
 <body>
 
@@ -13,6 +14,8 @@
     <div class="logo">
       <span class="logo-mark">M</span>
       <span class="logo-text">Mini<b>Vault</b></span>
+      <!-- Sign in / account button is drawn here by auth.js -->
+      <div id="authBox" class="auth-box"></div>
     </div>
   </header>
 
@@ -34,6 +37,10 @@
     </button>
   </nav>
 
+  <!-- Official Supabase JavaScript client (no install needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="app.js"></script>
+  <!-- Must load AFTER app.js: it reuses the URL + key set there -->
+  <script src="auth.js"></script>
 </body>
 </html>
